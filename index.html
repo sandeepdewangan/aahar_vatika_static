@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aahar Vatika | आहार वाटिका </title>
+  <meta name="description" content="आहार वाटिका – रायपुर की भरोसेमंद टिफिन सेवा" />
+  <style>
+    :root{
+      --accent:#2b9348;
+      --muted:#64748b;
+      --bg:#f7faf9;
+      --card:#ffffff;
+      --maxw:1000px;
+      --radius:14px;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color: #0f172a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, var(--bg), #ffffff);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding-bottom:86px; /* space for bottom bar */
+      display:flex;align-items:center;justify-content:center;min-height:100vh;
+    }
+    .wrap{
+      width:94%;max-width:var(--maxw);margin:28px auto;background:transparent;
+    }
+    header.card{
+      background:var(--card);border-radius:var(--radius);padding:36px;text-align:center;box-shadow:0 8px 30px rgba(12,15,20,0.06);
+    }
+    /* logo */
+    .logo{
+      width:140px;height:140px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg,#e9f7ee,#f0fff5);box-shadow:0 6px 18px rgba(43,147,72,0.12);
+    }
+    .site-title{font-size:40px;margin:6px 0 2px;font-weight:700;letter-spacing:0.2px}
+    .tagline{color:var(--muted);font-size:15px;margin:0}
+
+    main{margin-top:22px;display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start}
+    .about, .features, .gallery{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(12,15,20,0.04)}
+    .about h2,.features h2,.gallery h2{margin:0 0 10px;font-size:18px}
+    .about p{color:var(--muted);line-height:1.6}
+
+    .features ul{padding-left:18px;color:var(--muted);line-height:1.7}
+    .contact-card{position:sticky;top:28px;background:linear-gradient(180deg,#ffffff,#f7fff6);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,15,20,0.04)}
+    .contact-card h3{margin:0 0 10px}
+    .contact-item{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14px}
+    .contact-item strong{color:#0f172a}
+
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .thumb{height:90px;border-radius:8px;background:linear-gradient(135deg,#f2f8f3,#eef9f0);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+
+    footer.bottom-bar{
+      position:fixed;left:0;right:0;bottom:0;height:72px;background:#02140a;color:#fff;display:flex;align-items:center;justify-content:center;padding:0 16px;box-shadow:0 -6px 20px rgba(2,20,10,0.35);
+    }
+    .bottom-inner{width:94%;max-width:var(--maxw);display:flex;align-items:center;justify-content:space-between}
+    .contact-list{display:flex;gap:18px;align-items:center}
+    .contact-list a{color:#bfe9c9;text-decoration:none;font-size:14px}
+    .brand-mini{display:flex;gap:10px;align-items:center}
+    .brand-mini .mini-logo{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center}
+
+    /* responsive */
+    @media (max-width:860px){
+      main{grid-template-columns:1fr}
+      .contact-card{position:relative;top:auto}
+      .logo{width:110px;height:110px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="card" role="banner">
+      <div class="logo" aria-hidden="true">
+        <!-- simple SVG centered logo for Aahar Vaatika -->
+        <svg width="80px" height="80px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M405.333333 390.4l-59.733333 59.733333 392.533333 392.533334c17.066667 17.066667 42.666667 17.066667 59.733334 0 17.066667-17.066667 17.066667-42.666667 0-59.733334L405.333333 390.4z" fill="#0288D1" /><path d="M339.2 565.333333l121.6-121.6L164.266667 149.333333l-12.8 10.666667c-59.733333 59.733333-59.733333 157.866667 0 217.6l187.733333 187.733333z" fill="#0288D1" /><path d="M663.466667 462.933333l-59.733334-59.733333-381.866666 379.733333c-17.066667 17.066667-17.066667 42.666667 0 59.733334 17.066667 17.066667 42.666667 17.066667 59.733333 0l381.866667-379.733334z" fill="#03A9F4" /><path d="M602.124904 221.824979a170.666667 213.333333 45.001 1 0 241.354902 241.363328 170.666667 213.333333 45.001 1 0-241.354902-241.363328Z" fill="#03A9F4" /></svg>
+
+      </div>
+      <div class="site-title">आहार वाटिका</div>
+      <div class="tagline">रायपुर की भरोसेमंद टिफिन सेवा</div>
+    </header>
+
+    <main>
+      <section>
+        <article class="about" aria-labelledby="aboutHeading">
+          <h2 id="aboutHeading">About Aahar Vaatika</h2>
+          <p>
+            आहार वाटिका रायपुर में घर जैसा ताज़ा और पौष्टिक खाना पहुँचाने वाली एक विश्वसनीय टिफिन सेवा है। हमारी रसोई साफ-सुथरी, सुव्यवस्थित और पूरी तरह से हाइजेनिक है, जहाँ हर दिन प्यार और देखभाल से भोजन तैयार किया जाता है। हम शुद्ध सामग्री, कम तेल और घरेलू स्वाद को ध्यान में रखकर खाना बनाते हैं।
+
+हमारी डिलीवरी सेवा रायपुर के प्रमुख क्षेत्रों में समय पर गर्म खाना पहुँचाती है – चाहे वह आपका ऑफिस हो, घर हो या पीजी। आहार वाटिका में सिर्फ खाना नहीं, बल्कि हर टिफिन में अपनापन और स्वाद मिलता है।
+
+          </p>
+         <!--  <p>
+            Our core values are sustainability, food security, community education, and inclusivity. We run workshops on kitchen gardening, composting,
+            seasonal cooking, and children's nutrition. Members are encouraged to take part in planting, harvesting, and organizing events.
+          </p> -->
+        </article>
+
+        <article class="features" aria-labelledby="featuresHeading" style="margin-top:16px;">
+          <h2 id="featuresHeading">Our specialties</h2>
+          <ul>
+            <li>घर जैसा ताज़ा, पौष्टिक और कम तेल वाला भोजन तैयार करना, जिसमें घरेलू स्वाद और शुद्ध सामग्री का ध्यान रखा जाता है।</li>
+            <li>साफ-सुथरी, सुव्यवस्थित और पूरी तरह हाइजेनिक रसोई में हर दिन प्यार और देखभाल से खाना बनाना।</li>
+            <li>रायपुर के प्रमुख क्षेत्रों में समय पर गर्म टिफ़िन की डिलीवरी देना—चाहे ऑफिस, घर या पीजी हो।</li>
+            <li>हर टिफ़िन के साथ अपनापन, स्वाद और गुणवत्ता का भरोसा प्रदान करना।</li>
+          </ul>
+        </article>
+
+        <!-- <article class="gallery" aria-labelledby="galleryHeading" style="margin-top:16px;">
+          <h2 id="galleryHeading">Garden gallery (sample)</h2>
+          <div class="gallery-grid">
+            <div class="thumb">Herb patch</div>
+            <div class="thumb">Raised beds</div>
+            <div class="thumb">Community kitchen</div>
+            <div class="thumb">Compost corner</div>
+          </div>
+        </article> -->
+
+      </section>
+
+      <aside class="contact-card" aria-labelledby="contactHeading">
+        <h3 id="contactHeading">Contact</h3>
+        <div class="contact-item"><strong>Phone:</strong> <span>+91 77728 06554</span></div>
+        <div class="contact-item"><strong>Email:</strong> <span><a href="mailto:mycityapp.ind@gmail.com">mycityapp.ind@gmail.com</a></span></div>
+        <div class="contact-item"><strong>Address:</strong> <span>Raipur, Chhattisgarh</span></div>
+        <div style="height:12px"></div>
+        <!-- <div style="font-size:13px;color:var(--muted)">Open to volunteers, donations, and collaboration with schools and NGOs. Sign up for our newsletter via the contact email.</div> -->
+      </aside>
+    </main>
+  </div>
+
+  <footer class="bottom-bar" role="contentinfo">
+    <div class="bottom-inner">
+      <div class="brand-mini">
+        <div class="mini-logo" aria-hidden="true">
+          <!-- tiny decorative mark -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.2 4.6L19 9l-4 3.2L15.4 19 12 16.2 8.6 19 9 12.2 5 9l4.8-2.4L12 2z" fill="white" opacity="0.9"/></svg>
+        </div>
+        <div style="font-size:14px">आहार वाटिका</div>
+      </div>
+
+      <nav class="contact-list" aria-label="footer contact">
+        <a href="tel:+917772806554">+91 7772806554</a>
+        <a href="mailto:mycityapp.ind@gmail.com">mycityapp.ind@gmail.com</a>
+        <a href="#" aria-label="address">Raipur, Chhattisgarh</a>
+      </nav>
+
+    </div>
+  </footer>
+
+</body>
+</html>
